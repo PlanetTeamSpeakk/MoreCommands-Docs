@@ -1,0 +1,70 @@
+# Bind Command
+## Bind Set Command
+### Usage: /bind set <key\> <msg\>
+Sets a new bind.  
+A key can only have one bind. To run multiple commands with one key, 
+consider combining this with [macros](./macro).  
+
+Keep in mind that bindings take priority over regular keybindings. 
+Setting a binding to a key like escape is far from recommended.
+
+### Parameters
+- **Key**
+  + Type: [`key`](#bind-list-keys-command)
+  + Default: none, this parameter is required
+  + The key to set this bind to.
+- **Msg**
+  + Type: `string`
+  + Default: none, this parameter is required
+  + The message to set, does not necessarily have to start with a slash in which case
+    it will be sent as a plain message.
+
+### Example
+`/bind set R /jump`
+
+## Bind Remove Command
+### Usage: /bind remove <key\>
+Unbinds a key.
+
+### Parameters
+- **Key**
+  + Type: [`key`](#bind-list-keys-command)
+  + Default: none, this parameter is required
+  + The key to unbind
+
+### Example
+`/bind remove R`
+
+## Bind List Command
+### Usage: /bind list
+Lists all binds you've set.
+
+### Parameters
+This command has no parameters.
+
+### Example
+`/bind list`
+
+## Bind List Keys Command
+### Usage: /bind listkeys
+Lists all keys you can use when setting or removing binds.
+
+### Parameters
+This command has no parameters.
+
+### Example
+`/bind listkeys`
+
+## Bind Record Command
+### Usage: /bind record \[amount]
+Records the given amount of key presses after running the command and prints the key
+pressed in chat.
+
+### Parameters
+- **Amount**
+  + Type: `int`
+  + Default: `2`
+  + The amount of key presses to record.
+
+### Example
+`/bind record 2`

@@ -1,0 +1,18 @@
+# Permissions
+MoreCommands has full [LuckPerms](https://luckperms.net) integration and you are encouraged to 
+use it alongside this mod when running on a server.  
+
+All server commands use a permission that's just their name prepended with `morecommands.`.
+(E.g. for the vault command, it's `morecommands.vault`.)  
+For [Elevated Commands](./category/elevated), this permission is by default only granted 
+to operators.
+
+Aside from that, a couple commands also have extra permissions, often to use the command on 
+other players. (E.g. `morecommands.spawn.others`, `morecommands.enderchest.others`, etc.)
+
+The [Vault Command](./commands/server/unelevated/vault) has special extra permissions, namely: 
++ `morecommands.vault.max.<i>` where `<i>` is a number between 1 and 100 (exclusive).  
+  This permission denotes the amount of vaults a player may have. The default for this
+  is dictated by the `vaults` gamerule. <!-- TODO link gamerule -->
++ `morecommands.vault.rows.<i>` where `<i>` is a number between 1 and 6 (inclusive).  
+  This permission denotes the amount of rows a player's vaults must have. The default is `6`.

@@ -1,0 +1,73 @@
+# Warp Command
+# Usage: /warp \[page]|\[name]
+Lists the available warps or teleports you to the requested warp.
+
+## Parameters
+- **Page**
+  + Type: `int`
+  + Default: `1`
+  + The page of warps to list
+- **Name**
+  + Type: `warp`
+  + Default: none, if omitted, lists warps instead
+  + The name of the warp to teleport to
+
+## Example
+`/warp 1`  
+`/warp end`
+
+## Set Warp Command
+### Usage: /setwarp <name\>
+Sets a warp where you're currently standing.
+
+### Parameters
+- **Name**
+  + Type: `string`
+  + Default: none, this parameter is required
+  + The name of the warp to set
+
+### Example
+`/setwarp end`
+
+## Del Warp Command
+### Usage: /delwarp <name\>
+Deletes a warp.
+
+### Parameters
+- **Name**
+  + Type: `warp`
+  + Default: none, this parameter is required
+  + The name of the warp to delete
+
+### Example
+`/delwarp end`
+
+:::danger Permissive
+Regular users can only delete their own warps. 
+You must either be op (all versions) or have the `morecommands.delwarp.others` permission (4.0+) 
+to delete others' warps.
+:::
+
+## Limit Warp Command
+### Usage: /limitwarp <name\>
+Limits a warp from being used by regular users
+
+### Parameters
+- **Name**
+  + Type: `warp`
+  + Default: none, this parameter is required
+  + The name of the warp to limit
+
+### Example
+`/limitwarp end`
+
+## Warp Info Command
+### Usage: /warpinfo <name\>
+Supplies statistics and information on a warp.
+
+### Parameters
+- **Name**
+  
+
+### Example
+

@@ -1,0 +1,78 @@
+# Macro Command
+# Usage: /macro <macro\>
+Executes a macro.  
+Macros are lists of commands to execute when they are executed.
+
+## Parameters
+- **Macro**
+  + Type: `macro`
+  + Default: none, this parameter is required
+  + The macro to execute
+
+## Example
+`/macro godpot`
+
+## Macro Create Command
+### Usage: /macro create <name\>
+Creates a new empty macro.
+
+### Parameters
+- **Name**
+  + Type: `string`
+  + Default: none, this parameter is required
+  + The name of the new macro
+
+### Example
+`/macro create godpot`
+
+## Macro Add Command
+### Usage: /macro add <macro\> <msg|index> \[msg]
+Adds a new message to a macro.  
+
+### Parameters
+- **Msg**
+  + Type: `string`
+  + Default: none, this parameter is required
+  + The message to add, does not necessarily have to start with a slash in which case
+    it will be sent as a plain message.
+- **Index**
+  + Type: `int`
+  + Default: end of list
+  + The index at which to add the message.
+    If this is passed, the msg parameter must come after this.
+
+### Example
+`/macro add godpot /give @s minecraft:potion`
+
+## Macro Remove Command
+### Usage: /macro remove <macro\> \[index]
+Remove either a whole macro, or a command at a certain index
+
+### Parameters
+- **Macro**
+  + Type: `macro`
+  + Default: none, this parameter is required
+  + The macro to remove or to remove a command from
+
+### Example
+`/macro remove godpot 1`
+
+## Macro View Command
+### Usage: /macro view <macro\>
+Views all commands of a macro.
+
+### Parameters
+- **Macro**
+  + Type: `macro`
+  + Default: none, this parameter is required
+  + The macro to view
+
+## Macro List Command
+### Usage: /macro list
+Lists all available macros.
+
+### Parameters
+This command has no parameters.
+
+### Example
+`/`

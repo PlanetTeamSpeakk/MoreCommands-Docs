@@ -1,0 +1,56 @@
+# Emulate Command
+Emulate mouse or key presses. Either press a mouse or key at a given interval or hold it for
+a certain amount of time.
+
+## Emulate Clear Command
+### Usage: /emulate mouse|keyboard clear OR /emulate clear
+Clear either all emulation tasks of the given type or all emulation tasks.
+
+### Parameters
+This command has no parameters.
+
+### Example
+`/emulate mouse clear`
+
+## Emulate Add Interval Command
+### Usage: /emulate mouse|keyboard add interval <interval\> \[button|key] \[count]
+Adds a new interval emulation task.  
+Presses the given button or key at the given interval for the given amount of times.
+
+### Parameters
+- **Button** or **Key**
+  + Type: `mouse button` or `keyboard key`
+  + Default: none, this parameter is required
+  + Either a mouse button if the type is `mouse` or a keyboard key if the type is `keyboard`,
+    Auto-completion will help you with what values are available.  
+    In the case of mouse: `1` is left click, `2` is right click, `3` is middle click
+- **Count**
+  + Type: `int`
+  + Default: `-1 (infinite)`
+  + The amount of times the button or key should be pressed before the task is considered finished.
+
+### Example
+`/emulate mouse add interval 1 2 -1`
+
+## Emulate Remove Command
+### Usage: /emulate mouse|keyboard remove <id\>
+Prematurely removes a task, instantly ceasing its effects.
+
+### Parameters
+- **Id**
+  + Type: `int`
+  + Default: none, this parameter is required
+  + The id of the task to remove, this id gets sent when you make a new task.
+
+### Example
+`/emulate mouse remove 1`
+
+## Emulate List Command
+### Usage: /emulate mouse|keyboard list
+Lists all ongoing tasks for the given type.
+
+### Parameters
+This command has no parameters
+
+### Example
+`/emulate mouse list`

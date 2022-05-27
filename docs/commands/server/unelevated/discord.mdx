@@ -1,0 +1,60 @@
+# Discord Command
+# Usage: /discord
+Sends you an invite to this server's Discord server.
+
+## Parameters
+This command has no parameters.
+
+## Example
+`/discord`
+
+:::danger Server-only
+This command can only be used on dedicated servers.
+:::
+
+## Discord Set Command
+### Usage: /discord set <invite\>
+Sets the invite URL to send players when using the [Discord Command](#discord-command)
+
+### Parameters
+- **Invite**
+  + Type: `url`
+  + Default: none, this parameter is required
+  + The invite URL to set, does not necessarily have to start with https://discord.gg/
+
+### Example
+`/discord set https://discord.gg/tzsmCyk`
+
+:::danger OP-only
+Only operators may use this command.
+:::
+
+## Discord Player Command
+### Usage: /discord <player\>
+Gets or requests a player's Discord tag, depending on how the player configured the mod.  
+Requires that the target player has rich presence enabled.
+
+### Parameters
+- **Player**
+  + Type: `player`
+  + Default: none, this parameter is required
+  + The player whose Discord tag to get.
+
+### Example
+`/discord PlanetTeamSpeak`
+
+## Discord Send Command
+### Usage: /discord send <player\>
+Sends someone your Discord tag.  
+When someone attempts to get your tag with the [Discord Player Command](#discord-player-command) 
+and you haven't configured it to be public to everyone, a message will be sent to you asking 
+you to perform this command.
+
+### Parameters
+- **Player**
+  + Type: `player`
+  + Default: none, this parameter is required
+  + The player to whom your Discord tag will be sent
+
+### Example
+`/discord send PlanetTeamSpeak`

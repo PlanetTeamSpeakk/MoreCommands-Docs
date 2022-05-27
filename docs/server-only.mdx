@@ -1,0 +1,10 @@
+# Server Only Mode
+Since MoreCommands 3.10, there's a server-only mode.  
+Enabling this mode disables commands that require client-side modifications (currently only
+the [Reach Command](./commands/server/elevated/reach)) and modifies all commands that use
+MoreCommands-exclusive argument types to use vanilla argument types instead.  
+
+**This is by default disabled, which means clients will need to install this mod as well.**
+To enable this, either run /serveronly and restart the server, or open 
+`config/MoreCommands/SERVERONLY.txt` with a text-editor and change `serverOnly=false` to
+`serverOnly=true`.

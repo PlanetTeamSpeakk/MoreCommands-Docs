@@ -1,0 +1,45 @@
+# Kit Command
+# Usage: /kit <kit\>
+Gives you a kit and initiates a cooldown if applicable.  
+Drops items that don't fit in your inventory.
+
+## Parameters
+- **Kit**
+  + Type: `kit`
+  + Default: none, this parameter is required
+  + The kit to give
+
+## Example
+`/kit tools`
+
+## Create Kit Command
+### Usage: /createkit <name\> <cooldown\>
+Creates a new kit from the items in your inventory.
+
+### Parameters
+- **Name**
+  + Type: `string`
+  + Default: none, this parameter is required
+  + The name of the kit to create
+- **Cooldown**
+  + Type: `int`
+  + Default: none, this parameter is required
+  + The amount of seconds players must wait to use this kit again.  
+    Passing `0` disables cooldown for this kit.
+    From version 4.0, passing `-1` makes the kit a one-time use.
+
+### Example
+`/createkit tools 3600`
+
+## Del Kit Command
+### Usage: /delkit <kit\>
+Deletes a kit.
+
+### Parameters
+- **Kit**
+  + Type: `kit`
+  + Default: none, this parameter is required
+  + The kit to delete
+
+### Example
+`/delkit tools`

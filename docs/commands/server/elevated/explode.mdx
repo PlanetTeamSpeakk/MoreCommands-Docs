@@ -1,0 +1,28 @@
+# Explode Command
+# Usage: /explode \[pos] \[power] \[fire] \[destruct] \[launch]
+Spawns an explosion at your feet.
+
+## Parameters
+- **Pos**
+  + Type: `vector3`
+  + Default: `position of command source`
+  + The position at which to spawn the explosion
+- **Power**
+  + Type: `float`
+  + Default: `4.0`
+  + The power with which the explosion should explode
+- **Fire**
+  + Type: `boolean`
+  + Default: `false`
+  + Whether to add fire blocks to the explosion (like fireballs)
+- **Destruct**
+  + Type: `destruction type (NONE, BREAK, DESTROY)`
+  + Default: `BREAK`
+  + How to handle blocks that get affected by the explosion
+- **Launch**
+  + Type: `boolean`
+  + Default: `true`
+  + Whether the explosion should launch you away
+
+## Example
+`/explode ~ ~ ~ 4 false BREAK true`

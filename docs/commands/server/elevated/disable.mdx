@@ -1,0 +1,22 @@
+# Disable Command
+# Usage: /disable <command\>
+Disable a server command from being used by regular players.  
+Disabling a command will result in only operators being able to use it.
+
+## Parameters
+- **Command**
+  + Type: `string`
+  + Default: none, this parameter is required
+  + The command to disable, this is a path of actual commands. E.g. the [Barrier Command](./barrier)
+    has an argument called `player`, to only disable passing this argument, pass `barrier amount player`.
+
+## Example
+`/disable barrier amount player`
+
+:::danger Server-only
+This command can only be used on dedicated servers.
+:::
+
+:::danger Deprecated
+This command is deprecated in favour of using [LuckPerms](https://luckperms.net).
+:::

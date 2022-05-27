@@ -1,0 +1,34 @@
+# Fake Player Command
+## Fake Player Create Command
+### Usage: /fakeplayer create <name\> \[skinname] \[userid]
+Create or fake players.
+
+### Parameters
+- **Name**
+  + Type: `string`
+  + Default: none, this parameter is required
+  + The name of the fakeplayer, must be between 3 and 16 characters
+- **Skinname**
+  + Type: `string`
+  + Default: name
+  + The name of the player whose skin to use
+- **Userid**
+  + Type: `UUID`
+  + Default: UUID of player with the given name or random
+  + The UUID the fake player should have
+
+### Example
+`/fakeplayer create Notch`
+
+## Fake Player Kick Command
+### Usage: /fakeplayer kick <player\>
+Kick fake players.
+
+### Parameters
+- **Player**
+  + Type: `player`
+  + Default: none, this parameter is required
+  + The player to kick, must be a fake player
+
+### Example
+`/fakeplayer kick Notch`

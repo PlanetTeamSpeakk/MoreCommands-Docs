@@ -1,0 +1,43 @@
+# Alias Command
+## Alias Create Command
+### Usage: /alias create <name\> <msg\>
+Creates a new alias.  
+Any alias created can be invoked by using it as a command.  
+E.g. an alias made with `/alias create dirt /give @s minecraft:dirt` can be invoked by typing `/dirt`.
+
+### Parameters
+- **Name**
+  + Type: `string`
+  + Default: none, this parameter is required
+  + The name of the alias, this will be used to trigger the alias.
+- **Msg**
+  + Type: `string`
+  + Default: none, this parameter is required
+  + The message to send, does not necessarily have to start with a slash in which case
+    it will be sent as a plain message.
+
+### Example
+`/alias create dirt /give @s minecraft:dirt`
+
+## Alias Remove Command
+### Usage: /alias remove <name\>
+Removes an alias.
+
+### Parameters
+- **Name**
+  + Type: `alias`
+  + Default: none, this parameter is required
+  + The name of the alias to remove
+
+### Example
+`/alias remove dirt`
+
+## Alias List Command
+### Usage: /alias list
+Lists all aliases you have set.
+
+### Parameters
+This command has no parameters.
+
+### Example
+`/alias list`

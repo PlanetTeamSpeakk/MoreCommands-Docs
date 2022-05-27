@@ -1,0 +1,8 @@
+{
+  "label": "Unelevated",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Documentation on how to use unelevated server commands"
+  }
+}

@@ -1,0 +1,21 @@
+# Nickname Command
+# Usage: /nick <\nickname>|off \[player]
+Sets or resets your nickname.
+
+## Parameters
+- **Nickname**
+  + Type: `string`
+  + Default: none, this parameter is required
+  + Your new nickname, may contain formattings
+- **Player**
+  + Type: `player`
+  + Default: `@s (command source)`
+  + The player whose nickname to set or reset.
+    Passing this requires OP (all versions) or `morecommands.nickname.others` (4.0+).
+
+## Example
+`/nick &6&lP&4&lT&e&lS`
+
+:::tip
+To view a player's real name, use the [Realname Command](./realname)
+:::

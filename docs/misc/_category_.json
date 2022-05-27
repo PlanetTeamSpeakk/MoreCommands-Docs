@@ -1,0 +1,8 @@
+{
+  "label": "Miscellaneous",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Stuff this mod has to offer that doesn't fit in any other category."
+  }
+}

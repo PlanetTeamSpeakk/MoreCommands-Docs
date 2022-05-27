@@ -1,0 +1,48 @@
+# Disable Client Command Command
+# Usage: /disableclientcommand <command\>
+Disable clients from using specific client-side commands. 
+
+## Parameters
+- **Command**
+  + Type: `string`
+  + Default: none, this parameter is required
+  + The command to disable on the client, can also be a command with subcommand.
+
+## Example
+`/disableclientcommand calc`  
+`/disableclientcommand macro create`
+
+:::danger Server-only
+This command can only be used on dedicated servers.
+:::
+
+:::tip
+The behaviour of this command (along with [Disable Client Option Command](./disable-client-option)) can be replicated on Bukkit servers with the following code:
+```
+public static void sendMoreCommandsDisable(Player player, boolean commands, String... disabled) {
+    ByteBuf buf = Unpooled.buffer();
+    writeVarInt(buf, disabled.length); // Write length of array
+    for (String s : disabled) writeString(buf, s); // Write contents of array
+
+    // Send data as plugin message
+    player.sendPluginMessage(plugin, "morecommands:disable_client_" + (commands ? "commands" : "options"), buf.array());
+}
+
+// Following two methods are based on how Minecraft handles these
+public static ByteBuf writeString(ByteBuf buf, String s) {
+    byte[] bytes = s.getBytes(StandardCharsets.UTF_8);
+    writeVarInt(buf, bytes.length);
+    buf.writeBytes(bytes);
+    return buf;
+}
+
+public static ByteBuf writeVarInt(ByteBuf buf, int i) {
+    while ((i & -128) != 0) {
+        buf.writeByte(i & 127 | 128);
+        i >>>= 7;
+    }
+    buf.writeByte(i);
+    return buf;
+}
+```
+:::

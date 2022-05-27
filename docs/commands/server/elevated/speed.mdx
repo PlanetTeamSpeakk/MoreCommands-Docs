@@ -1,0 +1,35 @@
+# Speed Command
+# Usage: /speed <speed\>
+Sets your speed of the type that's currently most appropriate 
+(`WALK` when on ground, `FLY` when flying, `SWIM` when in water).
+
+## Parameters
+- **Speed**
+  + Type: `float`
+  + Default: none, this parameter is required
+  + The speed to set
+
+## Example
+`/speed 10`
+
+## Speed Walk, Fly and Swim Command
+### Usage: /speed walk|fly|swim \[speed]|\[target] \[targets]
+Gets or sets either your or someone else's speed.
+
+### Parameters
+- **Speed**
+  + Type: `float`
+  + Default: none, if not passed, gets your current speed
+  + The speed to set
+- **Target**:
+  + Type: `player`
+  + Default: none, if not passed, gets your current speed
+  + The player whose speed to get
+- **Targets**:
+  + Type: `player selector`
+  + Default none, if not passed, gets your or targets' current speed
+  + The players whose speed to set, can only be passed if speed is passed too.  
+    Requires `morecommands.speed.others` perm on version 4.0+.
+
+### Example
+`/speed swim 5 @a`

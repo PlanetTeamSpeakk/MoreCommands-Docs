@@ -1,0 +1,19 @@
+# Send Chat Command
+# Usage: /sendchat <msg\>
+Sends a message as a chat message, regardless of if it should be treated as a command.
+
+## Parameters
+- **Msg**
+  + Type: `string`
+  + Default: none, this parameter is required.
+  + The message to send.
+
+## Example
+`/sendchat /help is what you're looking for.`
+
+:::danger 1.19+
+Starting from 1.19, chat messages and chat commands must be signed. As a side effect, they are
+now no longer treated identically and commands use a separate type of packet.  
+Because of this, this command can exist which means that this command cannot work on versions
+older than 1.19.
+:::

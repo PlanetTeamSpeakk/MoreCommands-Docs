@@ -1,0 +1,18 @@
+# Dropstore Command
+# Usage: /dropstore \[pos]|\[clear] \[clear]
+Drops your inventory in chests.
+
+## Parameters
+- **Pos**
+  + Type: `blockpos`
+  + Default: `position of command source`
+  + The position at which to place the chests  
+    Passing this requires the `morecommands.dropstore.elsewhere` permission.
+- **Clear**
+  + Type: `boolean`
+  + Default: `true`
+  + Whether to clear your inventory too.  
+    Passing this requires the `morecommands.dropstore.clear` permission.
+
+## Example
+`/dropstore ~ ~ ~ true`

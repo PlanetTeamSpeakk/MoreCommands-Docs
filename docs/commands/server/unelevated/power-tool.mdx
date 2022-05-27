@@ -1,0 +1,51 @@
+# Power Tool Command
+## Power Tool Reset
+### Usage: /powertool reset
+Turns your powertool back into a normal item.
+
+### Parameters
+This command has no parameters.
+
+### Example
+`/powertool reset`
+
+## Power Tool Add Command
+### Usage: /powertool add <command\>
+Adds a command to your powertool and turns your item into a powertool if it isn't one yet.
+
+### Parameters
+- **Command**
+  + Type: `command`
+  + Default: none, this parameter is required
+  + The command to add to your powertool
+
+### Example
+`/powertool add say hello`
+
+## Power Tool Remove Command
+### Usage: /powertool remove <index\>
+Removes a command from your powertool.
+
+### Parameters
+- **Index**
+  + Type: `int`
+  + Default: none, this parameter is required
+  + The index of the command to remove.
+
+### Example
+`/powertool remove 1`
+
+## Power Tool List Command
+### Usage: /powertool list
+Lists all commands on this powertool.
+
+### Parameters
+This command has no parameters
+
+### Example
+`/powertool list`
+
+:::tip
+You can cycle through the commands of your powertool using the Powertool Cycle keybind
+which is set to G by default.
+:::

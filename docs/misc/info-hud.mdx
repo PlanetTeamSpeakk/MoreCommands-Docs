@@ -1,0 +1,69 @@
+# Info Hud
+MoreCommands offers a Heads-Up Display that can display a lot of information about what's 
+going on around you in your Minecraft world.  
+
+The default key to toggle it is `O` and this can be changed in the Minecraft controls screen.  
+The config file for this HUD can be found at `<minecraft directory/config/MoreCommands/infoHud.txt`.
+
+## Keys
+The Info HUD can display many statistics, these are inserted into the lines that you put in the 
+config file and are formatted as `{<key>}`.  
+
+The keys that can be used in the config file are as follows:
+- `DF`: default formatting, gold by default, but can be changed with a client option or gamerule.
+- `SF`: secondary formatting, yellow by default, but can be changed with a client option or gamerule.
+- `playerName`: your player's name
+- `x`: your x position
+- `y`: your y position
+- `z`: your z position
+- `chunkX`: your chunk x position
+- `chunkY`: your chunk y position
+- `chunkZ`: your chunk z position
+- `yaw`: your yaw (horizontal rotation)
+- `pitch`: your pitch (vertical rotation)
+- `biome`: the biome you're in
+- `difficulty`: the difficulty of the world you're in. Only works on singleplayer.
+- `blocksPerSec`: your speed in blocks per second
+- `avgSpeed`: a less volatile version of `blocksPerSec`
+- `toggleKey`: the key used to toggle the HUD
+- `configFile`: the path of the infoHud.txt configuration file
+- `facing`: the direction you're facing
+- `time`: the current time in 24-hour format
+- `time12`: the current time in 12-hour format
+- `UUID`: your player's UUID
+- `holding`: the item you're holding
+- `xp`: your total experience points
+- `xpLevel`: your experience level
+- `gamemode`: your gamemode
+- `fps`: current framerate
+- `blockLight`: the blocklight level at your position
+- `skyLight`: the skylight level at your position
+- `lookingAtX`: the x coordinate of the block you're looking at
+- `lookingAtY`: the y coordinate of the block you're looking at
+- `lookingAtZ`: the z coordinate of the block you're looking at
+- `lookingAt`: the name of the block or entity you're looking at
+- `language`: the currently selected game language
+- `lookingVecX`: the exact x coordinate of the position you're looking at
+- `lookingVecY`: the exact y coordinate of the position you're looking at
+- `lookingVecZ`: the exact z coordinate of the position you're looking at
+- `lookingAtSide`: the side of the block you're looking at
+- `entities`: the amount of currently loaded entities
+
+## Variables
+The Info HUD also supports a couple variables which may change how or where the text is rendered.  
+These variables can be set by having a single line as follows: `var <variable> = <value>`.  
+
+The variables currently available are as follows:
+- `xOffset`: the horizontal offset at which to start rendering the HUD.
+- `yOffset`: the vertical offset at which to start rendering the HUD.
+
+## Comments
+The Info HUD config also supports comments.  
+Any line starting with two slashes (`//`) is completely ignored and any part of any line after 
+two slashes is also ignored.  
+
+E.g.
+```
+// This line is ignored
+{DF}Player: {SF}{playerName} // This part will not be rendered.
+```

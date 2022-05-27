@@ -1,0 +1,68 @@
+# Potion Command
+## Potion Add Command
+### Usage: /potion add <effect\> \[duration] \[amplifier] \[ambient] \[showParticles]
+Adds an effect to the potion you're holding.
+
+### Parameters
+- **Effect**
+  + Type: `status effect`
+  + Default: none, this parameter is required
+  + The status effect to add
+- **Duration**
+  + Type: `int`
+  + Default: `1200 (1 minute)`
+  + The amount of ticks to apply the effect for when drinking this potion
+- **Amplifier**
+  + Type: `int`
+  + Default: `0`
+  + The level of the status effect, an amplifier of 0 means level I, 1 means level II, etc.
+- **Ambient**
+  + Type: `boolean`
+  + Default: `false`
+  + Whether this status effect should be treated as if applied by a beacon, changes the way it's rendered.
+- **Show Particles**
+  + Type: `boolean`
+  + Default: `true`
+  + Whether bubble particles should emit from the player when this potion is consumed.
+
+### Example
+`/potion add minecraft:speed 1200 0 false true`
+
+## Potion Remove Command
+### Usage: /potion remove <index\>
+Removes an effect from the potion you're holding.
+
+### Parameters
+- **Index**
+  + Type: `int`
+  + Default: none, this parameter is required
+  + The index of the effect to remove
+
+### Example
+`/potion remove 1`
+
+## Potion Settype Command
+### Usage: /potion settype <type\>
+Sets the type of the potion you're holding.
+
+### Parameters
+- **Type**
+  + Type: `potion`
+  + Default: none, this parameter is required
+  + The type to set
+
+### Example:
+`/potion settype minecraft:water_breathing`
+
+## Potion Setcolour (or Setcolor) Command
+### Usage: /potion setcolour <colour\> OR /potion setcolor <colour\>
+Sets the colour of the potion you're holding.
+
+### Parameters
+- **Colour**
+  + Type: `hex int`
+  + Default: none, this parameter is required
+  + The colour to set your potion to
+
+### Example
+`/potion setcolour #aabbcc`

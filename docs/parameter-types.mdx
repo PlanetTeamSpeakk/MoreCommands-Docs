@@ -1,0 +1,65 @@
+# Parameter Types
+MoreCommands parameter use various types, below are most of them explained.
+
+## String
+A regular piece of text, some commands only allow single words, other commands take entire sentences,
+and other commands (especially if more parameters follow a string parameter) may take either.  
+In the last case, if you wish to pass a string with spaces, the string must be in quotes.  
+E.g. `"this is a string with spaces"` or `'this string also has spaces'`
+
+## Int
+A regular whole number, ranging from -2.14 billion to 2.14 billion.
+
+## Long
+A regular whole number, ranging from really large negative to really large positive. (Effectively infinity)
+
+## Float
+A floating point number, supports both whole numbers and numbers with decimals.
+
+## Double
+Same as [float](#float), but supports way larger and more precise values.
+
+## Vector3
+A vector of three [double](#double)s.
+
+## Entity selector
+Any kind of selector with any kind of types.  
+E.g. `@e[type=!player]`
+
+## Player
+Any entity selector that only targets a single player.  
+E.g. `@e[type=player,limit=1] (same as @a[limit=1])` or `@p` or `@r`
+
+## Player selector
+Any entity selector that only targets players, but may target multiple players.
+
+## Status effect
+A potion status effect, a list can be found [here](https://minecraft.fandom.com/wiki/Effect#Effect_list).
+
+## Hex int
+An integer in hexadecimal format.  
+Between one and six digits which each can range from 0 to 9 and a to f.  
+Can optionally be preceded by a hashtag.
+
+## Entity type
+Any type of entity, same as can be passed to the summon command.
+
+## Painting motive
+Any kind of motive a painting may have. Unlikely mods add any, but for a list of vanilla ones 
+have a look [here](https://minecraft.fandom.com/wiki/Painting#Canvases) (the resource 
+location is what you're looking for).
+
+## Blockpos
+A vector of three [int](#int)s.
+
+## NBT Path
+A path to specify what specific part of the NBT data you wish to retrieve.  
+For more information, have a look [here](https://minecraft.fandom.com/wiki/NBT_path_format).
+
+## Time
+Either one of the following formats:
++ 12-hour time ending with either `am` or `pm`. E.g. `3:30pm`
++ 24-hour time not ending in anything. E.g. `15:30`
++ Ticks, ranging from 0 to 24000. E.g. `9500`
+
+Any time can also start with an @-symbol, indicating that the time is fixed and mustn't change.
