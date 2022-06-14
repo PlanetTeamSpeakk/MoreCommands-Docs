@@ -135,6 +135,11 @@ const config = {
       colorMode: {
         defaultMode: 'dark',
         respectPrefersColorScheme: true,
+      },
+      algolia: {
+        appId: 'ADLXJJ4NA4',
+        apiKey: '4e8b1a887820605776d9af48c4a5bbe3',
+        indexName: 'morecommands'
       }
     }),
 };
