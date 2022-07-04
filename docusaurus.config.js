@@ -95,6 +95,14 @@ const config = {
                 label: 'Gamerules',
                 to: '/category/gamerules',
               },
+              {
+                label: 'Client Options',
+                to: '/category/client-options',
+              },
+              {
+                label: 'Miscellaneous',
+                to: '/category/miscellaneous',
+              },
             ],
           },
           {
