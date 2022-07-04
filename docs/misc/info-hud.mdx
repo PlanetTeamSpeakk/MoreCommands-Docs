@@ -57,6 +57,31 @@ The variables currently available are as follows:
 - `xOffset`: the horizontal offset at which to start rendering the HUD.
 - `yOffset`: the vertical offset at which to start rendering the HUD.
 
+Starting from version 4.0, you also have the following variables:
+- `scale`: the scale at which to render the HUD, 1.0 is default, anything below this is smaller.
+- `backgroundOpacity`: the opacity of the background drawn behind the HUD, 0 by default as there isn't one. 100 at max
+- `backgroundColour`: the hex colour of the background, may start with a #.
+
+Example using all variables:
+```
+// Have a look at https://github.com/PlanetTeamSpeakk/MoreCommands to see what variables you can use here.
+var xOffset = 2
+var yOffset = 2
+var scale = 0.75
+var backgroundOpacity = 25
+var backgroundColour = #00ABBA
+{DF}Player: {SF}{playerName}
+{DF}FPS: {SF}{fps}
+{DF}X: {SF}{x}
+{DF}Y: {SF}{y}
+{DF}Z: {SF}{z}
+{DF}Pitch: {SF}{pitch}
+{DF}Yaw: {SF}{yaw}
+{DF}Facing: {SF}{facing}
+{DF}Biome: {SF}{biome}
+{DF}Speed: {SF}{avgSpeed}
+```
+
 ## Comments
 The Info HUD config also supports comments.  
 Any line starting with two slashes (`//`) is completely ignored and any part of any line after 
