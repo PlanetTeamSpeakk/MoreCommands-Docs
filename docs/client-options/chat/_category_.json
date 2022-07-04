@@ -1,6 +1,6 @@
 {
   "label": "Chat",
-  "position": 4,
+  "position": 3,
   "link": {
     "type": "generated-index",
     "description": "Chat related tweaks. Most of these are enabled by default."
