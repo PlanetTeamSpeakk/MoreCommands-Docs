@@ -1,0 +1,8 @@
+{
+  "label": "Cheats",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Some less harmless tweaks. All of them are set to mimic the default behaviour of Minecraft, meaning that their default values don't change anything. To prevent you getting an unfair advantage, hese options only affect singleplayer worlds."
+  }
+}
