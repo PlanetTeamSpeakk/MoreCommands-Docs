@@ -13,11 +13,6 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-
-  organizationName: 'PlanetTeamSpeakk',
-  projectName: 'MoreCommands',
-  deploymentBranch: 'docs',
-  trailingSlash: false,
   
   i18n: {
     defaultLocale: 'en',
@@ -32,10 +27,7 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/PlanetTeamSpeakk/MoreCommands/tree/docs-sources/',
+          editUrl: 'https://github.com/PlanetTeamSpeakk/MoreCommands-Docs/tree/master/',
         },
         blog: false,
         theme: {
