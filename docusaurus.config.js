@@ -124,7 +124,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} PlanetTeamSpeak. Built with Docusaurus.<br><img src="https://visitor-badge.glitch.me/badge?page_id=com.ptsmods.morecommands">`,
+        copyright: `Copyright © ${new Date().getFullYear()} PlanetTeamSpeak. Built with Docusaurus.<br><img src="https://visitor-badge.glitch.me/badge?page_id=com.ptsmods.morecommands&left_color=%231b1b1d&right_color=%23d65009">`,
       },
       prism: {
         theme: lightCodeTheme,
